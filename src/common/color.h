@@ -11,12 +11,11 @@
 // along with this software. If not, see <http://creativecommons.org/publicdomain/zero/1.0/>.
 //==============================================================================================
 
+#include <iostream>
 #include "vec3.h"
 
-#include <iostream>
 
-
-void write_color(std::ostream &out, color pixel_color, int samples_per_pixel) {
+void write_color(std::ostream &out, color pixel_color, int samples_per_pixel=1) {
     auto r = pixel_color.x();
     auto g = pixel_color.y();
     auto b = pixel_color.z();
