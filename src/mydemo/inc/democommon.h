@@ -16,5 +16,6 @@
 #include "sphere.h"
 #include "hittable_list.h"
 #include "camera.h"
+#include "material.h"
 
 #endif

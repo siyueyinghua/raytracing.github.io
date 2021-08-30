@@ -6,8 +6,10 @@ vpath %.h 	./inc:../common
 vpath %.hpp ./inc:../common
 
 # compile and link parameter
-CC := gcc
-CXX := g++
+# CC := gcc
+# CXX := g++
+CC := clang
+CXX := clang++
 CFLAGS :=
 CXXFLAGS:= -std=c++17
 LDFLAGS := -lX11 -lpthread -lXrandr -lXi -ldl -lXxf86vm -lXinerama -lXcursor
@@ -31,7 +33,9 @@ TARGET := ray_two_sphere
 TGT_ALL := $(TARGET).out
 TARGET := ray_two_sphere_msaa
 TGT_ALL := $(TARGET).out
-TARGET := ray_diffuse_material
+TARGET := ray_material_diffuse
+TGT_ALL := $(TARGET).out
+TARGET := ray_material_diffuse_metal
 TGT_ALL := $(TARGET).out
 
 # link 
